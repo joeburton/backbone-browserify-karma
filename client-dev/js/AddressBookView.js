@@ -28,13 +28,10 @@ var AddressBook = Backbone.View.extend({
 
     render: function() {
         
-        console.log(this.collection);
-        
         var addresses = '';
         
         this.collection.each(function (model) {
             addresses += this.template(model.attributes);
-            console.log(this.template(model.attributes));
         }, this); 
 
         this.$el.find('.addresses').html(addresses);
