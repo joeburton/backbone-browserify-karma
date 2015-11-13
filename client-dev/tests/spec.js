@@ -50,8 +50,8 @@ describe("#AddressBookView", function () {
 		expect(addressBookView.getNumberOfAddresses()).toBe(2);
 	});
 
-
 	it("should contain the number of addresses listed", function () {
 		expect(addressBookView.$el.find('.num').html()).toBe('(2)');
 	});
+
 });
