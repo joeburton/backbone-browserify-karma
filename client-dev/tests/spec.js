@@ -19,6 +19,16 @@ describe("#AddressModel", function () {
 	
 });
 
+describe("#AddressModel 2", function () {
+
+	var addressModel = new AddressModel();
+
+	it("The AddressModel should have the house property 2", function () {
+		expect(addressModel.get('house')).toBe('House Name');
+	});
+	
+});
+
 describe("#AddressBookView", function () {
 
 	var addressCollection;

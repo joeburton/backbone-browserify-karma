@@ -9,7 +9,7 @@ module.exports = function(karma) {
             'client-dev/tests/*.js': ['browserify']
         },
 
-        browsers: ['PhantomJS'],
+        browsers: ['Chrome'],
 
         reporters: ['spec', 'failed', 'html'],
 
